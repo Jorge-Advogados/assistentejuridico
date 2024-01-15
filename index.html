@@ -1,0 +1,51 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+
+<flowise-fullchatbot></flowise-fullchatbot>
+<script type="module">
+    // import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    import Chatbot from "https://cdn.jsdelivr.net/gh/gabrieuz/FlowiseChatEmbed/dist/web.js"
+    Chatbot.initFull({
+        chatflowid: "d6b02e5d-7b0b-4ecc-a544-5639bdd72291",
+        apiHost: "https://yeadabzx.cloud.sealos.io",
+        theme: {
+            chatWindow: {
+                welcomeMessage: `Olá, serei seu Assistente Jurídico Virtual!
+                Aqui estão algumas instruções para melhorar a sua experiência:
+                \n &#9878; Faça perguntas específicas: Formule perguntas claras e específicas sobre os documentos mencionados.
+                \nExemplo: "Qual é a definição de responsabilidade civil no Código Civil?"
+                \n &#9878; Faça referência aos documentos: Utilize o título completo ou abreviações conhecidas ao mencionar um documento de lei.
+                \nExemplo: "No Código Penal, qual é a pena para o crime de furto?"
+                \n &#9878; Faça contextualização: Forneça um contexto breve quando necessário para garantir respostas mais precisas.
+                \nExemplo: "Considerando a Lei de Contratos, explique a rescisão unilateral."`,
+
+                backgroundColor: "#ffffff",
+                fontSize: 16,
+                poweredByTextColor: "#303235",
+                botMessage: {
+                    backgroundColor: "#f7f8ff",
+                    textColor: "#303235",
+                    showAvatar: true,
+                    avatarSrc: "https://i.ibb.co/ryLT3Fg/botphoto.png",
+                },
+                userMessage: {
+                    backgroundColor: "#3B81F6",
+                    textColor: "#ffffff",
+                    showAvatar: true,
+                    avatarSrc: "https://i.ibb.co/4pSvtCN/image.png",
+                },
+                textInput: {
+                    placeholder: "Digite sua dúvida aqui...",
+                    backgroundColor: "#ffffff",
+                    textColor: "#303235",
+                    sendButtonColor: "#3B81F6",
+                }
+            }
+        }
+    })
+</script>
